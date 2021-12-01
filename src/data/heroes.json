@@ -1,0 +1,42 @@
+[
+	{
+		"id": "13",
+		"name": "Ximenam13",
+		"heroic": "true"
+	},
+	{
+		"id": "14",
+		"name": "Magic Alonso",
+		"heroic": "true"
+	},
+	{
+		"id": "33",
+		"name": "Mad Max",
+		"heroic": "false"
+	},
+	{
+		"id": "12",
+		"name": "Hermes",
+		"heroic": "false"
+	},
+	{
+		"id": "16",
+		"name": "Kaiser",
+		"heroic": "false"
+	},
+	{
+		"id": "23",
+		"name": "MJ",
+		"heroic": "false"
+	},
+	{
+		"id": "11",
+		"name": "Mr. electrolit",
+		"heroic": "false"
+	},
+	{
+		"id": "44",
+		"name": "Zippo",
+		"heroic": "true"
+	}
+]
