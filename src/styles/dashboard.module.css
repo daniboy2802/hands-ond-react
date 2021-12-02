@@ -1,5 +1,5 @@
 .container {
-  width: 400px;
+  width: 600px;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -7,11 +7,30 @@
   column-gap: 10px;
   row-gap: 10px;
 }
+
+.link {
+  text-decoration: none;
+}
+
 .element {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
   width: 100%;
-  height: 100px;
-  background-color: blue;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e6570;
+  color: #e3e3dc;
+  transition-property: background color;
+  transition-duration: 0.5s;
+}
+
+.element:hover {
+  background-color: #e3e3dc;
+  color: #5e6570;
+}
+
+.element p {
+  margin: 0 0;
+  font-size: 19px;
 }
