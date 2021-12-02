@@ -1,10 +1,10 @@
 import styles from '../styles/heroes.module.css'
 import Button from './Button'
+import useGetHeroes from '../tools/useGetHeroes'
+import HeroeElement from './HeroeElement'
 import { Link } from 'react-router-dom'
 import { Fragment } from 'react'
 import { useState } from 'react'
-import useGetHeroes from '../tools/useGetHeroes'
-import HeroeElement from './HeroeElement'
 
 export default function Heroes() {
   const [actualHero, setActualHero] = useState(null)

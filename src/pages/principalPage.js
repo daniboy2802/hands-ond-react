@@ -1,5 +1,4 @@
 import styles from '../styles/principalPage.module.css'
-import Button from '../components/Button'
 import Heroes from '../components/Heroes'
 import ShowElement from '../components/ShowElement'
 import Dashboard from '../components/Dashboard'

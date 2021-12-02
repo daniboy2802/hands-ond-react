@@ -6,7 +6,7 @@ export default function useGetHeroes() {
   useEffect(() => {
     let heroesTest = []
     const ids = Object.keys(window.localStorage)
-  
+
     ids.forEach(id => {
       let name = window.localStorage.getItem(id)
       let heroe = {
