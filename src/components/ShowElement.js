@@ -31,6 +31,7 @@ export default function ShowElement() {
         <input 
           value={name}
           className={styles['input']}
+          maxLength='18'
           onChange={(e) => updateName(e.target.value)}
         />
       </div>

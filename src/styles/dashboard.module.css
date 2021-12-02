@@ -1,4 +1,15 @@
-.container {
+.mainContainer {
+  width: 600px;
+  max-width: 600px;
+}
+
+header {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.elementContainer {
   width: 600px;
   height: auto;
   display: grid;
@@ -14,6 +25,8 @@
 
 .element {
   width: 100%;
+  max-width: 150px;
+  padding: 0px 7px;
   height: 150px;
   display: flex;
   text-align: center;
@@ -23,6 +36,7 @@
   color: #e3e3dc;
   transition-property: background color;
   transition-duration: 0.5s;
+  box-sizing: border-box;
 }
 
 .element:hover {
@@ -33,4 +47,6 @@
 .element p {
   margin: 0 0;
   font-size: 19px;
+  max-width: 100%;
+  word-wrap: break-word;
 }
