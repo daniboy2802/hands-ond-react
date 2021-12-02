@@ -6,7 +6,9 @@ import PrincipalPage from '../pages/principalPage';
 function App() {
   useEffect(() => {
     if(!window.localStorage.getItem('13')) {
-      setHeroes(heroes)
+      heroes.forEach(heroe => {
+        window.localStorage.setItem(heroe.id, heroe.name)
+      });
     }
   }, [])
 

@@ -4,14 +4,10 @@ import './styles/index.css';
 import App from './components/App';
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import { createBrowserHistory } from "history";
-
-// const customHistory = createBrowserHistory();
-// console.log(customHistory)
 
 ReactDOM.render(
   <BrowserRouter >
-    <App />
+    <App /> 
   </BrowserRouter>,
   document.getElementById('root')
 );

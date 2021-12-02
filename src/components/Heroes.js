@@ -3,27 +3,12 @@ import Button from './Button'
 import { Link } from 'react-router-dom'
 import { Fragment } from 'react'
 import { useEffect, useState } from 'react'
+import useGetHeroes from '../useGetHeroes'
 
 export default function Heroes() {
-  const [heroes, setHeroes] = useState([]); 
   const [actualHero, setActualHero] = useState(null)
-
-  useEffect(() => {
-    const ids = Object.keys(window.localStorage)
-    // Fixed the production problem
-    ids.forEach(id => {
-      let name = window.localStorage.getItem(id)
-      let heroe = {
-        id: id,
-        name: name
-      }
-      setHeroes((prevState) => ([
-        ...prevState,
-        heroe
-      ]))
-    })
-  }, []);
-
+  const heroes = useGetHeroes()
+  
   const changeHero = (id, name) => {
     setActualHero({
       id: id,
