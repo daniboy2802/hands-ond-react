@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
 import Button from './Button'
-import Styles from '../styles/showElement.module.css'
+import styles from '../styles/showElement.module.css'
+import { useParams } from 'react-router'
+import { useEffect, useState } from 'react'
 
 
 export default function ShowElement() {
@@ -20,18 +20,22 @@ export default function ShowElement() {
   return (
     <div>
       <h1>{name} Details!</h1>
-      <div className={Styles['container']}>
-        <p className={Styles['identifier']}>ID: </p>
-        <p><span>{params.id}</span></p>
-        <label className={Styles['identifier']}>Name: </label>
+      <div className={styles['container']}>
+        <p className={styles['identifier']}>ID: </p>
+        <p>
+          <span>{params.id}</span>
+        </p>
+        <label className={styles['identifier']}>
+          Name: 
+        </label>
         <input 
           value={name}
-          className={Styles['input']}
+          className={styles['input']}
           onChange={(e) => updateName(e.target.value)}
         />
       </div>
       <div style={{margin: '10px 0'}}>
-        <Button onClick={(e) => window.history.back()} name='Back'></Button>
+        <Button onClick={() => window.history.back()} name='Back'></Button>
       </div>
     </div>
   )

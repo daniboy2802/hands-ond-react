@@ -3,11 +3,11 @@ import Button from '../components/Button'
 import Heroes from '../components/Heroes'
 import ShowElement from '../components/ShowElement'
 import Dashboard from '../components/Dashboard'
+import CustomLink from '../components/CustomLink'
 import { Fragment } from 'react'
 import {
   Routes,
   Route,
-  Link,
 } from 'react-router-dom'
 
 export default function PrincipalPage() {
@@ -16,8 +16,8 @@ export default function PrincipalPage() {
       <nav className={styles['nav']}>
           <h1>Tour of heroes</h1>
           <div>
-            <Link to='/dashboard'><Button name={'Dashboard'}></Button></Link>
-            <Link to='/heroes'><Button name={'Heroes'}></Button></Link>
+            <CustomLink to='/dashboard' name={'Dashboard'} />
+            <CustomLink to='/heroes' name={'Heroes'} />
           </div>
           <main>
             <Routes>

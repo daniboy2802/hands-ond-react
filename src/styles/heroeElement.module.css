@@ -1,0 +1,32 @@
+.buttonGroup {
+  cursor: pointer;
+  margin: 5px 0;
+  width: 200px;
+}
+
+.buttonGroup button {
+  display: inline-block;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+}
+
+.buttonId {
+  background-color: rgb(84, 94, 170);
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+
+.buttonName {
+  border-radius: 0 10px 10px 0;
+  max-width: auto;
+  width: 150px;
+}
+
+.buttonGroup:hover .buttonName{
+  color: #008CBA;
+}
