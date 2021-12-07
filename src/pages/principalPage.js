@@ -13,20 +13,20 @@ export default function PrincipalPage() {
   return (
     <div>
       <nav className={styles['nav']}>
-          <h1>Tour of heroes</h1>
-          <div>
-            <CustomLink to='/dashboard' name={'Dashboard'} />
-            <CustomLink to='/heroes' name={'Heroes'} />
-          </div>
-          <main>
-            <Routes>
-              <Route path='/dashboard' element={<Dashboard />} />
-              <Route exact path='/edit/:id' element={<ShowElement />} />
-              <Route path='/heroes' element={<Heroes />} />
-              <Route exact path='/' element={<Home />} />
-            </Routes>
-          </main>
-        </nav>
+        <h1>Tour of heroes</h1>
+        <div>
+          <CustomLink to='/dashboard' name={'Dashboard'} />
+          <CustomLink to='/heroes' name={'Heroes'} />
+        </div>
+        <main>
+          <Routes>
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route exact path='/edit/:id' element={<ShowElement />} />
+            <Route path='/heroes' element={<Heroes />} />
+            <Route exact path='/' element={<Home />} />
+          </Routes>
+        </main>
+      </nav>
     </div>
   )
 }
